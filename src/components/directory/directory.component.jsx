@@ -49,8 +49,8 @@ class Directory extends Component {
         const {sections} = this.state;
         return(
             <div className='directory-menu'>
-                {sections.map(({title, imageUrl, id, size}) => (    //Destructuring the sections object here
-                    <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>
+                {sections.map(({id, ...otherSectionProps}) => (    //Destructuring the sections object here
+                    <MenuItem key={id} {...otherSectionProps}/>
                 ))}
             </div>
         );
