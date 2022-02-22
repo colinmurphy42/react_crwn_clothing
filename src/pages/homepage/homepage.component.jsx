@@ -9,4 +9,4 @@ const HomePage = () => (
     </div>
 );
 
-export default HomePage;  //Will send back HomePage component as default
+export default HomePage;
